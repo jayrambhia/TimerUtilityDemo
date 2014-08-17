@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fenchtose.timerutilitydemo.TimerActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top|center" />
+        
+        	<LinearLayout
+    		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:gravity="bottom"
+        	android:layout_gravity="center"
+        	android:layout_marginTop="10dp"
+        	android:orientation="horizontal" >
+
+        	<Button
+            	android:id="@+id/button_pause"
+            	android:layout_width="100dp"
+            	android:layout_height="30dp"
+            	android:clickable="true"
+            	android:background="@drawable/ftue_dialog_button"
+            	android:text="Pause"
+            	android:textColor="#fff"
+            	android:textStyle="bold"
+            	android:onClick="pauseClicked"
+            	android:visibility="gone" />
+            
+           	<Button
+    	        android:id="@+id/button_start"
+        	    android:layout_width="100dp"
+            	android:layout_height="30dp"
+            	android:layout_marginLeft="5dp"
+            	android:background="@drawable/ftue_dialog_button"
+            	android:gravity="center"
+            	android:clickable="true"
+            	android:text="Start"
+            	android:onClick="startClicked"
+            	android:textColor="#fff"
+            	android:textStyle="bold" />
+    	</LinearLayout>
+
+</FrameLayout>
